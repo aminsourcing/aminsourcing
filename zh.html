@@ -418,6 +418,12 @@
         <div class="contact-row">
           <div class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
           <div><h4>工作时间</h4><p>周一至周六 9:00 – 18:00（北京时间）</p></div>
+        <div class="contact-row">
+          <div class="ci"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M9.5 4C5.36 4 2 6.91 2 10.5c0 1.95.98 3.71 2.55 4.88L4 18l2.88-1.43c.84.29 1.75.43 2.62.43h.28A4.87 4.87 0 0 1 9.5 15.5C9.5 12.46 12.03 10.5 15.28 10.5H15.5C14.54 6.79 12.3 4 9.5 4zm-2.1 4.5a.85.85 0 1 1 0 1.7.85.85 0 0 1 0-1.7zm4.2 0a.85.85 0 1 1 0 1.7.85.85 0 0 1 0-1.7zM22 15.5c0-2.96-2.66-5.5-6.28-5.5-3.62 0-6.28 2.54-6.28 5.5 0 2.96 2.66 5.5 6.28 5.5.78 0 1.52-.1 2.2-.3l2.27 1.3-.63-2.03c1.58-1.03 2.44-2.33 2.44-3.97zm-6.16-2a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5zm3 0a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5z"/></svg></div>
+          <div><h4>微信</h4><p>扫码添加，随时沟通报价</p>
+            <img src="images/wechat-qr.png" alt="微信二维码" class="qr-img" loading="lazy">
+          </div>
+        </div>
         </div>
       </div>
       <div class="contact-form reveal">
@@ -527,11 +533,38 @@
 </footer>
 
 <!-- Floating WhatsApp -->
+<button class="wx-float" id="wxFloat" aria-label="微信沟通">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9.5 4C5.36 4 2 6.91 2 10.5c0 1.95.98 3.71 2.55 4.88L4 18l2.88-1.43c.84.29 1.75.43 2.62.43h.28A4.87 4.87 0 0 1 9.5 15.5C9.5 12.46 12.03 10.5 15.28 10.5H15.5C14.54 6.79 12.3 4 9.5 4zm-2.1 4.5a.85.85 0 1 1 0 1.7.85.85 0 0 1 0-1.7zm4.2 0a.85.85 0 1 1 0 1.7.85.85 0 0 1 0-1.7zM22 15.5c0-2.96-2.66-5.5-6.28-5.5-3.62 0-6.28 2.54-6.28 5.5 0 2.96 2.66 5.5 6.28 5.5.78 0 1.52-.1 2.2-.3l2.27 1.3-.63-2.03c1.58-1.03 2.44-2.33 2.44-3.97zm-6.16-2a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5zm3 0a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5z"/></svg>
+</button>
 <a class="wa-float" href="https://wa.me/8613538973550" target="_blank" rel="noopener" aria-label="WhatsApp 咨询">
   <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.297-.497.1-.198.05-.371-.025-.52-.074-.149-.668-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
 </a>
 
-<script src="js/main.js"></script>
+<script src="js/main.js?v=2"></script>
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<div class="wx-modal" id="wxModal" aria-hidden="true">
+  <div class="wx-modal-card">
+    <button class="wx-modal-close" id="wxClose" aria-label="关闭">&times;</button>
+    <img src="images/wechat-qr.png" alt="微信二维码">
+    <h4>扫码添加微信</h4>
+    <p>微信 / WhatsApp：+86 135 3897 3550</p>
+    <p class="wx-hint">扫一扫，随时与我们沟通</p>
+  </div>
+</div>
+<script>
+/* ===== WeChat QR modal (inline) ===== */
+(function () {
+  var btn = document.getElementById('wxFloat');
+  var modal = document.getElementById('wxModal');
+  var close = document.getElementById('wxClose');
+  if (!btn || !modal) return;
+  function openWx() { modal.classList.add('open'); modal.setAttribute('aria-hidden', 'false'); }
+  function closeWx() { modal.classList.remove('open'); modal.setAttribute('aria-hidden', 'true'); }
+  btn.addEventListener('click', openWx);
+  close.addEventListener('click', closeWx);
+  modal.addEventListener('click', function (e) { if (e.target === modal) closeWx(); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeWx(); });
+})();
+</script>
 </body>
 </html>
